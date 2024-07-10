@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.transaction.Transactional;
 
-public interface NoteRepository extends JpaRepository<Note, Long> { //significa: <che_oggetti_manipolo, tipo_della_chiave>
+public interface NoteRepository extends JpaRepository<Note, Long> {
 	@Modifying
 	@Transactional
 	@Query(
